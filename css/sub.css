@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+body{
+    background: url(/GRAZZ/pages/sub-home.png) no-repeat,linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: cover;
+    backdrop-filter: blur(2px);
+    background-blend-mode:color-burn;
+    text-align: center;
+}
+
+.container{
+    width: 35%;
+    height: 45%;
+    background: #D5CFC0;
+    position: absolute;
+    left: 32%;
+    top: 20%;
+}
+.botones{
+    display: flex;
+    text-align: center;
+
+}
+.botones a{
+   align-items: center;
+   background: #c0bbac;
+   display: flex;
+   justify-content: center;
+   height: 10%;
+   position:relative;
+   top: 80%;
+   margin-left: 20px; 
+   margin-right: 20px;
+   border: 1px solid black;  
+}
+a{
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    font-weight: bold;
+    box-shadow: 2px 5px 2px black   ;
+}
+a:hover{
+    color: #D5CFC0;
+    background: black;
+    transition: .2s;
+}

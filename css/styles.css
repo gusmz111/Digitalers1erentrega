@@ -1,0 +1,123 @@
+@font-face {
+    font-family: Oak Light;
+    src: url(../fonts/oak-light/oak-light.eot);
+}
+
+:root{
+    --font-oak: 'Oak Light';
+    --papelClaro: #D5CFC0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: var(--font-oak);
+}
+body{
+    background: var(--papelClaro);
+    position: static;
+    align-items: center;
+    display: block;
+}
+/*          header        */
+.logo{
+    background: black;
+    width: 100%;
+    margin: auto;
+}
+.logo h1{
+    margin: 0;
+    padding-top:15px;
+    background: transparent;
+    color: var(--papelClaro);
+    text-align: center;
+    height:80px;
+    font-size: 52px;
+    font-style: normal;
+    animation-name: logaso;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+@keyframes logaso{
+    from {color: var(--papelClaro);}
+    to {color: #37342d;}
+}
+
+
+/*               div login                */
+.login{
+    margin-top: 250px;
+    margin-right: auto;
+    margin-left: auto;
+    background: transparent;
+    width: 420px;
+    height: 300px;
+    border: 3px solid black;
+    box-shadow: 10px 10px  5px  #857f6fb7;
+}   
+
+.login h1{
+    background-color: black;
+    font-weight: lighter;
+    color: var(--papelClaro);
+    font-size: 36PX;
+    font-style: italic;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    margin: 3px;
+}
+
+label{
+    color: black;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.container{
+    margin: 3px ;
+    margin-top: 25px;
+
+}
+
+.input-box{
+    margin-bottom: 30px;
+}
+
+input{
+    background: transparent;
+    margin-top: 5px;
+    width: 98%;
+    height: 25px;
+    box-shadow: 2px 2px 2px rgb(84, 79, 79);
+    font-size: 18px;
+    text-align: center;
+}
+input:hover{
+    background: rgb(0, 0, 0);
+    transition: .3s;
+    color: var(--papelClaro);   
+}
+.parraf{
+    display: flex;
+    justify-content: center;
+}   
+
+.boton{
+    display: flex;
+    position: relative;
+    justify-content:flex-end;
+    margin-right: 5px;
+    height: 30px;
+}
+button{
+    width: 90px;
+    font-size: 18px;
+    font-style: italic;
+    background: transparent;
+    font-weight: bold;
+}
+button:hover{
+    background: black;
+    color: white;
+}
